@@ -2,9 +2,10 @@ package info.istamendil.notebook.data;
 
 /**
  *
+ * General DB exception.
  * @author Alexander Ferenets (Istamendil) <ist.kazan@gmail.com>
  * 
- * Code for studying purposes. Programming course, 2nd semestr. Kazan Federal University, ITIS.
+ * Code for studying purposes. Programming course. Kazan Federal University, ITIS.
  * http://study.istamendil.info/
  */
 public class DbException extends Exception {
