@@ -25,6 +25,7 @@ Desktop.ini
 # NETBEANS and other IDEs
 **/nbproject/
 **/build/
+**/dist/
 build.xml
 manifest.mf
 
