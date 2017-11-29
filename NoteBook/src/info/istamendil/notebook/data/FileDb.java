@@ -20,7 +20,7 @@ import java.nio.file.Paths;
  * Code for studying purposes. Programming course. Kazan Federal
  * University, ITIS. http://study.istamendil.info/
  */
-public class FileDb implements Db {
+public class FileDb extends AbstractDb implements Db {
 
     protected final String path;
 
@@ -56,21 +56,6 @@ public class FileDb implements Db {
             throw new DbException("DB error: " + ex.getMessage());
         } catch (ClassNotFoundException ex) {
             throw new DbException("DB error: " + ex.getMessage());
-        }
-    }
-
-    private byte[] convertToBytes(Object object) throws IOException {
-        try (ByteArrayOutputStream bos = new ByteArrayOutputStream();
-                ObjectOutput out = new ObjectOutputStream(bos)) {
-            out.writeObject(object);
-            return bos.toByteArray();
-        }
-    }
-
-    private Object convertFromBytes(byte[] data) throws IOException, ClassNotFoundException {
-        try (ByteArrayInputStream bis = new ByteArrayInputStream(data);
-                ObjectInput in = new ObjectInputStream(bis)) {
-            return in.readObject();
         }
     }
 
