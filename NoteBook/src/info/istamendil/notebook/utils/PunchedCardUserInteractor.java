@@ -13,7 +13,7 @@ import java.util.List;
  * Code for studying purposes. Programming course. Kazan Federal
  * University, ITIS. http://study.istamendil.info/
  */
-public class PunchedCardUserInteractor implements UserInteractor {
+public class PunchedCardUserInteractor extends AbstractUserInteractor implements UserInteractor {
 
   protected final String[] lines;
   protected int currentLine = 0;
@@ -37,11 +37,6 @@ public class PunchedCardUserInteractor implements UserInteractor {
       System.out.println("<< " + command);
     }
     return command;
-  }
-
-  @Override
-  public void print(String output) throws UserInteractorWriteException {
-    System.out.println(">> " + output);
   }
 
 }
