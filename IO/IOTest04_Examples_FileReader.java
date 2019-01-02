@@ -1,10 +1,9 @@
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
 
-public class IOTest_Examples_FileReader {
+public class IOTest04_Examples_FileReader {
 
   public static void main(String[] args) {
     File file = Utils.getTestFile();

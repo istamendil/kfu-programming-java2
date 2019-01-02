@@ -1,10 +1,9 @@
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
 
-public class IOTest_Examples_FileInputStream {
+public class IOTest03_Examples_FileInputStream {
 
   public static void main(String[] args) {
     File file = Utils.getTestFile();

@@ -2,7 +2,7 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 
 
-public class IOTest_Examples_ByteArrayInputStream {
+public class IOTest06_Examples_ByteArrayInputStream {
 
   public static void main(String[] args) {
     byte[] data = new byte[]{(byte)0x1, (byte)0x10, (byte)0xFF};

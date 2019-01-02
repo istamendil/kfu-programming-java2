@@ -7,7 +7,7 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
-public class IOTest_Examples_AudioInputStream {
+public class IOTest05_Examples_AudioInputStream {
 
   public static void main(String[] args) {
     AudioInputStream stream = null;

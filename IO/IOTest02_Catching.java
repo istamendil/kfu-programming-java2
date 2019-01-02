@@ -1,12 +1,9 @@
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 
-public class IOTest_Catching {
+public class IOTest02_Catching {
 
   public static void main(String[] args) throws IOException{
     InputStream in;

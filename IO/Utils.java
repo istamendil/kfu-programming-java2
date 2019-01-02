@@ -23,7 +23,7 @@ public class Utils {
 
   public static File getTestFile() {
     try {
-      File file = new File(IOTest_Simpliest.class.getResource(TEST_FILENAME).toURI());
+      File file = new File(IOTest01_Simpliest.class.getResource(TEST_FILENAME).toURI());
       if (!file.exists()) {
         file.createNewFile();
       }
