@@ -18,6 +18,7 @@ public class Utils {
 
   public static final String TEST_FILENAME = "dummyFile.io";
   public static final String TEST_REMOTE_HOST = "study.istamendil.info";
+  public static final String TEST_REMOTE_AUDIO = "https://github.com/istamendil/kfu-programming-java2/raw/master/Audio/1nylon-guitar-girl-from-ipanema.wav";
   public static final String NON_EXISTING_FILENAME = "nef.io";
 
   public static File getTestFile() {
@@ -43,6 +44,15 @@ public class Utils {
       pw.flush();
       return s.getInputStream();
     } catch (IOException ex) {
+      ex.printStackTrace();//Don't do this in real programms!
+      return null;
+    }
+  }
+  
+  public static URL getTestAudioUrl() {
+    try {
+      return new URL(TEST_REMOTE_AUDIO);
+    } catch (MalformedURLException ex) {
       ex.printStackTrace();//Don't do this in real programms!
       return null;
     }
