@@ -26,8 +26,11 @@ Desktop.ini
 **/nbproject/
 **/build/
 **/dist/
+/.idea/
+/out/
 build.xml
 manifest.mf
+*.iml
 
 # JAVA
 
