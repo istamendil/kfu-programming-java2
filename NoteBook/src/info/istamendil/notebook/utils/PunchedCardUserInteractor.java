@@ -29,26 +29,6 @@ public class PunchedCardUserInteractor implements UserInteractor {
     }
   }
 
-  public PunchedCardUserInteractor() throws UserInteractorException {
-    Scanner scanner = new Scanner(System.in);
-    String line = scanner.nextLine();
-    if (line.equals("/")) {
-      throw new UserInteractorException("Nothing to input");
-    }
-    String[] lines = {line};
-    while (!line.equals("/")) {  // enter "/" for the end of the input
-      String[] lines1 = new String[lines.length + 1];
-      for (int i = 0; i < lines.length; i++) {
-        lines1[i] = lines[i];
-      }
-      lines1[lines.length] = line;
-      lines = lines1.clone();
-      line = scanner.nextLine();
-    }
-    this.lines = lines.clone();
-    this.currentLine = 0;
-  }
-
   @Override
   public String readCommand() throws UserInteractorReadException {
     String command = null;

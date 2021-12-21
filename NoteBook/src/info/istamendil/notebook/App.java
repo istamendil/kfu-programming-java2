@@ -4,6 +4,7 @@ import info.istamendil.notebook.data.Db;
 import info.istamendil.notebook.data.DbException;
 import info.istamendil.notebook.data.FileDb;
 import info.istamendil.notebook.data.RAMDb;
+import info.istamendil.notebook.utils.RAMInteractor;
 import info.istamendil.notebook.utils.UserInteractor;
 import info.istamendil.notebook.utils.PunchedCardUserInteractor;
 import info.istamendil.notebook.utils.UserInteractorException;
@@ -42,7 +43,7 @@ public class App extends Application{
   @Override
   public void init() {
     try {
-      this.terminal = new PunchedCardUserInteractor();
+      this.terminal = new RAMInteractor();
       this.db = new RAMDb();
     } catch (UserInteractorException ex) {
       System.out.println("Couldn't start application due error:");
