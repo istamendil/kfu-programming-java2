@@ -4,7 +4,10 @@ import info.istamendil.notebook.data.Db;
 import info.istamendil.notebook.data.DbException;
 import info.istamendil.notebook.data.FileDb;
 import info.istamendil.notebook.data.RAMDb;
+<<<<<<< HEAD
 import info.istamendil.notebook.utils.RAMInteractor;
+=======
+>>>>>>> dcab42452bcadbdd47aba14de40cd3b9b40bb547
 import info.istamendil.notebook.utils.UserInteractor;
 import info.istamendil.notebook.utils.PunchedCardUserInteractor;
 import info.istamendil.notebook.utils.UserInteractorException;
