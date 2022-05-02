@@ -26,8 +26,8 @@ Desktop.ini
 **/nbproject/
 **/build/
 **/dist/
-/.idea/
-/out/
+.idea/
+out/
 build.xml
 manifest.mf
 *.iml
